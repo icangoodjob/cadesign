@@ -343,15 +343,15 @@ function sprite() {
                 // // { removeEmptyText: true },
                 // { removeXMLNS: true },
                 // { removeAttrs: { attrs: '(fill|stroke)' } },
-                // { removeViewBox: false },
+                { removeViewBox: false },
                 // { removeUnusedNS: false },
                 // { removeUselessStrokeAndFill: false },
-                // { cleanupIDs: false },
-                // { removeComments: true },
-                // { removeEmptyAttrs: true },
-                // { removeEmptyText: true },
-                // { collapseGroups: true },
-                // { convertPathData: false },
+                { cleanupIDs: false },
+                { removeComments: true },
+                { removeEmptyAttrs: true },
+                { removeEmptyText: true },
+                { collapseGroups: true },
+                { convertPathData: false },
                 { removeAttrs: { attrs: '(fill|stroke)' } }
               ]
             }
