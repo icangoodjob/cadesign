@@ -1,0 +1,8 @@
+mixin modal(modalId, className)
+	div(id=modalId class=className).popup
+		div.popup__body
+			.popup__content
+				a(href="#header").popup__close.close-popup
+					+svgsprite('close-white')
+				if block
+					block

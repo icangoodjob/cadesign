@@ -1,0 +1,30 @@
+section.vacancy 
+	.container 
+		.heading-block.heading-block-vacancy 
+			h2.heading-block__title Вакансии
+			.vacancy__select
+				select(name="vacancy_select" class="js-choice")
+					option(value="Ivanovo") Общий центр обслуживания (Иваново)
+					option(value="Ivanovo") Общий центр обслуживания (Павлово)
+					option(value="Ivanovo") Общий центр обслуживания (Н.Новгород)
+					option(value="Ivanovo") Общий центр обслуживания (Дзержинск)
+			.heading-block__actions.actions
+				.actions__text Общий центр обслуживания (Иваново)
+				.actions__checkbox.checkbox
+					label(for="vacancy").checkbox__label
+						input(type="checkbox" name="vacancy" id="vacancy" class="real-checkbox checkbox__input")
+						span.custom-checkbox
+						span.checkbox__text Все вакансии
+		.vacancy__body 
+			each item, index in vacancy
+				.vacancy__item.item-vacancy
+					.item-vacancy__title= item.title
+					.item-vacancy__icon
+						+svgsprite(`vacancy-${index+1}`)
+					.item-vacancy__price= item.price
+					.item-vacancy__arrow
+						+svgsprite('arrow-next')
+					+btnTransparent('item-vacancy__button popup-button', 'Подробнее', 'vacancy_popup')
+		button(type="button").vacancy__showmore-btn.btn Больше вакансий
+
+

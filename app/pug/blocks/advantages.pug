@@ -1,0 +1,15 @@
+section.advantages 
+	.container
+		.advantages__wrapper(data-mobile="false").swiper
+			.advantages__body.swiper-wrapper
+				each item, index in advantages 
+					.advantages__item.item-advantages.swiper-slide
+						.item-advantages__body 
+							.item-advantages__header
+								.item-advantages__icon 
+									+svgsprite(`advantages-${index+1}`)
+								h2.item-advantages__title= item.title
+							.item-advantages__content 
+								p= item.content
+			.slider-pagination
+

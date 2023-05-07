@@ -1,0 +1,17 @@
+section.directions 
+	.container 
+		.directions__wrapper
+			.container
+				.directions__inner
+					.heading-block.heading-block-directions
+						h2.heading-block__title Студентам и молодым специалистам
+						p.heading-block__subtitle Учишься или недавно закончил направления
+					.directions__body 
+						each item, index in directions
+							.directions__item.item-directions 
+								.item-directions__icon 
+									+svgsprite(`direction-${index+1}`)
+								.item-directions__title= item.title
+					.directions__bottom 
+						button(type="button" class="directions__button") Заполни анкету 
+						span.directions__text и отправь нам!

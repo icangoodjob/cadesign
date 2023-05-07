@@ -1,0 +1,5 @@
+mixin btnTransparent(className, text, btnId)
+	button(type="button" class=className data-popup-button=btnId).btn-transparent
+		span.btn-transparent__text= text
+			span.btn-transparent__arrow 
+				+svgsprite('arrow-next')

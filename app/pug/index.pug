@@ -1,0 +1,18 @@
+extends includes/layout.pug
+
+append variables
+	- let pageTitle = "Главная";
+	- description += pageTitle;
+block content
+	include ./blocks/home
+	include ./blocks/advantages
+	include ./blocks/employees
+	include ./blocks/area
+	include ./blocks/videoblock
+	include ./blocks/ourvalues
+	include ./blocks/vacancy
+	include ./blocks/directions
+	include ./blocks/history
+	include ./blocks/contacts
+
+

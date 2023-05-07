@@ -1,0 +1,27 @@
+section.history 
+	.container 
+		.heading-block.heading-block-history
+			h2.heading-block__title Истории успеха
+	.history__body 
+		.history__slider.swiper 
+			.history__wrapper.swiper-wrapper
+				each item, index in history 
+					.history__slide.item-history.swiper-slide
+						.item-history__inner
+							.item-history__content
+								.item-history__title= item.title
+								.item-history__subtitle= item.post
+								.item-history__text 
+									p= item.text
+								button(type="button" data-popup-button="person_popup").popup-button.item-history__button= item.btn
+							.item-history__image
+								picture
+									source(srcset="../images/history/person.png" media="(min-width: 991.98px)")
+									source(srcset="../images/history/person-mobile.png" media="(max-width: 991.98px)")
+									img(src="../images/history/person.png", alt=item.title)
+			.slider-controls 
+				button(type="button").slider-arrow.slider-arrow-prev
+					+svgsprite('arrow-prev')
+				button(type="button").slider-arrow.slider-arrow-next
+					+svgsprite('arrow-next')
+				.slider-pagination

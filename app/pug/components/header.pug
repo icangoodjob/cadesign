@@ -1,0 +1,9 @@
+header.header#header
+	div.container
+		.header__body
+			a(href="/").header__logo.logo
+				+svgsprite('logo')
+			nav.header__menu.menu
+				include menu
+			button.menu__icon(type="button")
+				span

@@ -1,0 +1,28 @@
+ul.menu__list
+	li.menu__item 
+		a(href="#").menu__link О нас 
+	li.menu__item.active
+		a(href="#").menu__link Наши ценности
+	li.menu__item 
+		a(href="#").menu__link Вакансии 
+	li.menu__item 
+		a(href="#").menu__link Начало карьеры
+	li.menu__item 
+		a(href="#").menu__link Контакты
+	li.menu__item
+		a(href="#").menu__link.menu__link--social Социальные сети
+		span.menu__arrow 
+		.submenu 
+			ul.submenu__list
+				li.submenu__item
+					a(href="#" target="_blank").submenu__link
+						+svgsprite('vk')
+				li.submenu__item
+					a(href="#" target="_blank").submenu__link
+						+svgsprite('ok')
+				li.submenu__item
+					a(href="#" target="_blank").submenu__link
+						+svgsprite('fb')
+				li.submenu__item
+					a(href="#" target="_blank").submenu__link
+						+svgsprite('insta')

@@ -1,0 +1,11 @@
+section.our-values
+	.container 	
+		.heading-block.heading-block-values
+			h2.heading-block__title Наши ценности
+		.our-values__wrapper(data-mobile="false").swiper
+			.our-values__body.swiper-wrapper
+				each item in values
+					.our-values__item.item-our-values.swiper-slide
+						.item-our-values__title= item.title
+						.item-our-values__text= item.text
+			.slider-pagination

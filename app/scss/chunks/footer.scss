@@ -1,0 +1,41 @@
+.footer {
+	padding: 20px 0 81px;
+	text-align: center;
+	@media screen and (max-width: $lg) {
+		padding: 20px 0 26px;
+	}
+	&__copyright-block {
+		font-size: 11px;
+		line-height: 16px;
+		color: #828282;
+		margin-bottom: 17px;
+	}
+	&__link {
+		@include reset-link;
+		font-size: 14px;
+		line-height: 17px;
+		color: #187cd3;
+		cursor: pointer;
+		transition: all 0.2s ease 0s;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__logo {
+		display: none;
+		width: 80px;
+		height: 19px;
+		& svg {
+			width: 80px;
+			height: 19px;
+			fill: #c3c8c8;
+		}
+		@media screen and (max-width: $lg) {
+			display: block;
+			margin: 33px auto 0;
+		}
+		@media screen and (max-width: $lg) {
+			margin-top: 24px;
+		}
+	}
+}

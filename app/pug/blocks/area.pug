@@ -1,0 +1,15 @@
+section.area 
+	.container
+		h2.area__title 
+			| Общий центр обслуживания в г. Иваново оказывает услуги энергетическому
+			| холдингу Группе компаний в области:
+		.area__body
+			each item, index in area
+				.area__item.item-area
+					.item-area__wrapper
+						.item-area__icon 
+							+svgsprite(`area-${index+1}`)
+						.item-area__title= item.title
+						+btnTransparent('area__button', 'Подробнее')
+
+
