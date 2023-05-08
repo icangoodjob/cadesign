@@ -52,6 +52,6 @@
   "dependencies": {
     "choices.js": "^10.2.0",
     "gulp-sourcemaps": "^3.0.0",
-    "swiper": "^9.2.4"
+    "swiper": "^8.4.7"
   }
 }

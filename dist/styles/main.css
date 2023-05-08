@@ -2895,7 +2895,7 @@ body.lock {
     border-left: 1px solid #ededed;
   }
 
-  .item-advantages:not(.swiper-slide-visible) {
+  .item-advantages:not(.swiper-slide-visible):not(.swiper-slide-active):not(.swiper-slide-next) {
     border-color: transparent;
   }
 
@@ -2956,6 +2956,7 @@ body.lock {
   }
 
   .employees__slider {
+    overflow: hidden;
     padding: 0;
   }
 

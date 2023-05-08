@@ -157,7 +157,7 @@
 		&:first-child {
 			border-left: 1px solid #ededed;
 		}
-		&:not(.swiper-slide-visible) {
+		&:not(.swiper-slide-visible):not(.swiper-slide-active):not(.swiper-slide-next) {
 			border-color: transparent;
 		}
 		&.swiper-slide-active {
@@ -271,11 +271,11 @@
 			padding: 0 70px;
 		}
 		@media screen and (max-width: $lg) {
+			overflow: hidden;
 			padding: 0;
 		}
 	}
 }
-
 .item-employee {
 	&__body {
 		display: flex;
